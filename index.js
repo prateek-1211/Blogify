@@ -16,13 +16,13 @@ const app = express();
 const PORT = 8000;
 
 // Set a longer timeout (e.g., 30 seconds)
-mongoose.connect('mongodb://localhost/mydb', {
-  serverSelectionTimeoutMS: 30000, // 30 seconds
-});
+// mongoose.connect('mongodb://localhost/mydb', {
+//   serverSelectionTimeoutMS: 30000, // 30 seconds
+// });
 
-// mongoose
-// .connect('mongodb://localhost:27017/blogify')
-// .then((e) => console.log("MongoDB Connected"));
+mongoose
+.connect('mongodb://localhost:27017/blogify')
+.then((e) => console.log("MongoDB Connected"));
 
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
