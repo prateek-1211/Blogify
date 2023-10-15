@@ -15,10 +15,10 @@ const {
 const app = express();
 const PORT = 8000;
 
-// Set a longer timeout (e.g., 30 seconds)
-// mongoose.connect('mongodb://localhost/mydb', {
-//   serverSelectionTimeoutMS: 30000, // 30 seconds
-// });
+Set a longer timeout (e.g., 30 seconds)
+mongoose.connect('mongodb://localhost/mydb', {
+  serverSelectionTimeoutMS: 30000, // 30 seconds
+});
 
 mongoose
 .connect('mongodb://localhost:27017/blogify')
